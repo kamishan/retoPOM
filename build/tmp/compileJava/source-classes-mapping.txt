@@ -1,10 +1,10 @@
 com/demoqa/automation/utils/JavaScript.java
  com.demoqa.automation.utils.JavaScript
-com/demoqa/automation/pageobjects/RegisterUserFieldsStep.java
- com.demoqa.automation.pageobjects.RegisterUserFieldsStep
+com/demoqa/automation/models/DataInjection.java
+ com.demoqa.automation.models.DataInjection
 com/demoqa/automation/utils/Times.java
  com.demoqa.automation.utils.Times
 com/demoqa/automation/steps/RetoPomUserStepDefinitions.java
  com.demoqa.automation.steps.RetoPomUserStepDefinitions
-com/demoqa/automation/models/DataInjection.java
- com.demoqa.automation.models.DataInjection
+com/demoqa/automation/pageobjects/RegisterUserFieldsStep.java
+ com.demoqa.automation.pageobjects.RegisterUserFieldsStep

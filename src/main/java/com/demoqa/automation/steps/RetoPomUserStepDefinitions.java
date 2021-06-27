@@ -18,6 +18,7 @@ public class RetoPomUserStepDefinitions {
 
     @Step
     public void fillAllFieldsForm() throws InterruptedException {
+        registerUserFieldsStep.closePublicity();
         registerUserFieldsStep.getDriver().manage().timeouts().pageLoadTimeout(3, TimeUnit.SECONDS);
         Times.waitFor(2000);
         registerUserFieldsStep.sendFirstName(dataInjection.getFirstName());

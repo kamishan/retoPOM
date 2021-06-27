@@ -6,6 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 
 
+import java.util.concurrent.TimeUnit;
+
 import static org.junit.Assert.assertEquals;
 
 @DefaultUrl("https://www.demoqa.com/automation-practice-form")
@@ -31,6 +33,7 @@ public class RegisterUserFieldsStep extends PageObject {
    public By submitClick = By.id("submit");
    public By registerValidation = By.id("example-modal-sizes-title-lg");
    public By closeClick = By.id("closeLargeModal");
+   public By closePublicity = By.xpath("//img[@src='https://ad.plus/adplus-advertising.svg']");
 
 
    public void sendFirstName(String string){
@@ -116,6 +119,11 @@ public class RegisterUserFieldsStep extends PageObject {
 
       assertEquals(getDriver().findElement(registerValidation).getText(), compareDataFields);
    }
-
+   public void closePublicity(){
+      getDriver().manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+      if (getDriver().findElement(closePublicity).isEnabled()){
+         getDriver().findElement(closePublicity).click();
+      }
+   }
 }
 
